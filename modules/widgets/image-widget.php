@@ -70,7 +70,10 @@ class Jetpack_Image_Widget extends WP_Widget {
 
 		if ( '' != $instance['img_url'] ) {
 
-			$output = '<img src="' . esc_attr( $instance['img_url'] ) .'" ';
+			$output = '<img src="' . jetpack_photon_url( esc_attr( $instance['img_url'] ), array(
+				'w' => $instance['img_width'],
+				'h' => $instance['img_height'],
+			) ) . '" ';
 
 			if ( '' != $instance['alt_text'] ) {
 				$output .= 'alt="' . esc_attr( $instance['alt_text'] ) .'" ';
