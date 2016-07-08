@@ -9,7 +9,6 @@ if [ "$WP_TRAVISCI" != "phpunit" ]; then
     npm install -g npm
     node --version
     npm --version
-    nvm --version
     npm install -g gulp-cli
     npm install
 fi
