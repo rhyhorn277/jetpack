@@ -2,7 +2,7 @@
 
 ## connectModuleOptions
 
-High order component that connects to Jetpack modules'options
+A High Order Component that connects to Jetpack modules'options
 redux state selectors and action creators.
 
 **Arguments**
@@ -19,3 +19,16 @@ This HOC provides the wrapped component with the following properties
 * toggleOption( option_name, currentValue )
 * updateOptions( newOptions )
 * regeneratePostByEmailAddress()
+
+## module-settings-form
+
+A High Order Component that provide a &lt;form&gt; with functionality to handle input values on the forms own React component state.
+
+_Basically useful for using in composition with the connectModuleOptions HOC._
+
+** Props **
+
+* getOptionCurrentValue()
+* props.module
+* props.updateOptions
+
