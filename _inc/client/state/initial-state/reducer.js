@@ -29,13 +29,11 @@ export function getAdminEmailAddress( state ) {
 }
 
 export function getSiteRawUrl( state ) {
-	const roles = get( state.jetpack.initialState, 'rawUrl', {} );
-	return roles;
+	return get( state.jetpack.initialState, 'rawUrl', {} );
 }
 
 export function getSiteAdminUrl( state ) {
-	const roles = get( state.jetpack.initialState, 'adminUrl', {} );
-	return roles;
+	return get( state.jetpack.initialState, 'adminUrl', {} );
 }
 
 export function userCanManageModules( state ) {
