@@ -17,7 +17,7 @@ import JetpackConnect from 'components/jetpack-connect';
 import JumpStart from 'components/jumpstart';
 import { getJumpStartStatus } from 'state/jumpstart';
 import { getSiteConnectionStatus } from 'state/connection';
-import { setInitialState, getSiteRawUrl } from 'state/initial-state';
+import { setInitialState, getSiteRawUrl, getSiteAdminUrl } from 'state/initial-state';
 import AtAGlance from 'at-a-glance/index.jsx';
 import Engagement from 'engagement/index.jsx';
 import Security from 'security/index.jsx';
@@ -136,7 +136,8 @@ export default connect(
 	state => {
 		return assign( {}, state, {
 			getJumpStartStatus: getJumpStartStatus( state ),
-			siteRawUrl: getSiteRawUrl( state )
+			siteRawUrl: getSiteRawUrl( state ),
+			siteAdminUrl: getSiteAdminUrl( state )
 		} );
 	},
 	dispatch => bindActionCreators( { setInitialState }, dispatch )
