@@ -37,3 +37,8 @@ export function getSiteAdminUrl( state ) {
 	const roles = get( state.jetpack.initialState, 'adminUrl', {} );
 	return roles;
 }
+
+export function userCanManageModules( state ) {
+	return get( state.jetpack.initialState.userData.currentUser.permissions, 'manage_modules', false );
+}
+
