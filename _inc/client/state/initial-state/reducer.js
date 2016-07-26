@@ -33,3 +33,7 @@ export function getSiteRawUrl( state ) {
 	return roles;
 }
 
+export function getSiteAdminUrl( state ) {
+	const roles = get( state.jetpack.initialState, 'adminUrl', {} );
+	return roles;
+}
