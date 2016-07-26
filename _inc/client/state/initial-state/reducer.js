@@ -27,3 +27,9 @@ export function getSiteRoles( state ) {
 export function getAdminEmailAddress( state ) {
 	return get( state.jetpack.initialState, [ 'userData', 'currentUser', 'wpcomUser', 'email' ] );
 }
+
+export function getSiteRawUrl( state ) {
+	const roles = get( state.jetpack.initialState, 'rawUrl', {} );
+	return roles;
+}
+
