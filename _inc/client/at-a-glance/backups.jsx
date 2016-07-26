@@ -75,7 +75,7 @@ const DashBackups = React.createClass( {
 				return(
 					__( 'To automatically back up your site, please {{a}}upgrade!{{/a}}', {
 						components: {
-							a: <a href={ 'https://wordpress.com/plans/' + window.Initial_State.rawUrl } target="_blank" />
+							a: <a href={ 'https://wordpress.com/plans/' + this.props.siteRawUrl } target="_blank" />
 						}
 					} )
 				);
