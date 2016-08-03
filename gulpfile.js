@@ -144,6 +144,7 @@ gulp.task( 'react:static', [ 'react:build' ], function() {
 		fs.writeFile( './_inc/build/static.html', window.staticHtml );
 		fs.writeFile( './_inc/build/static-noscript-notice.html', window.noscriptNotice );
 		fs.writeFile( './_inc/build/static-version-notice.html', window.versionNotice );
+		fs.writeFile( './_inc/build/static-ie-notice.html', window.ieNotice );
 	} );
 } );
 
