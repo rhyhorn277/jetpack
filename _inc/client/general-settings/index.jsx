@@ -68,8 +68,8 @@ const GeneralSettings = React.createClass( {
 				{ moduleCard( 'notes' ) }
 				{ moduleCard( 'json-api' ) }
 				<FoldableCard
-					header={ __( 'Miscellaneous Settings' ) }
-					subheader={ __( 'Manage Snow and other fun things for your site.' ) }
+					header={ __( 'Holiday Snow' ) }
+					subheader={ __( 'Show falling snow in the holiday period.' ) }
 					clickableHeaderText={ true }
 					disabled={ nonAdmin }
 				>
